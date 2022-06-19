@@ -1,0 +1,21 @@
+.wrap-input-otp {
+    display: flex;
+}
+
+.btn-send {
+    display: grid;
+}
+
+.a:hover {
+    color: #e7ab3d;
+}
+
+.input-number {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.resend-link {
+    cursor: pointer;
+}

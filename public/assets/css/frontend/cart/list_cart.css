@@ -1,0 +1,101 @@
+body {
+    background: #ececec;
+}
+/*Hidden class for adding and removing*/
+.lds-dual-ring.hidden {
+    display: none;
+}
+
+/*Add an overlay to the entire page blocking any further presses to buttons or other elements.*/
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,.8);
+    z-index: 999;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+/*Spinner Styles*/
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 5% auto;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+header {
+    padding: 20px 0px
+}
+header .active {
+    font-weight: 700;
+    position: relative
+}
+header .active .fa-check {
+    position: absolute;
+    left: 50%;
+    bottom: -23px;
+    background-color: green;
+    font-size: 0.1rem;
+    padding: 4px;
+    border: 1px solid #008000;
+    border-radius: 50%;
+    color: #008000
+}
+.progress {
+    height: 2px;
+    background-color: #ccc
+}
+.progress div {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.progress .progress-bar {
+    width: 40%
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@media(min-width:768px) and (max-width: 991px) {
+    .progress .progress-bar {
+        width: 33%
+    }
+}
+@media(min-width: 576px) and (max-width: 767px) {
+    .progress .progress-bar {
+        width: 29%
+    }
+}
+@media(max-width: 575px) {
+    .progress .progress-bar {
+        width: 38%
+    }
+}
+@media(max-width: 424px) {
+    body {
+        width: fit-content
+    }
+}
+@media(max-width: 375px) {
+    .progress .progress-bar {
+        width: 35%
+    }
+}

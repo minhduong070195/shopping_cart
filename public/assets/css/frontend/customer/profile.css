@@ -1,0 +1,42 @@
+body {
+    background-color: #efefef;
+}
+
+.profile-pic {
+    width: 200px;
+    max-height: 200px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.file-upload {
+    display: none;
+}
+.circle {
+    border-radius: 100% !important;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.p-image {
+    margin-top: 10px;
+}
+
+.upload-button {
+    width: 160px;
+    height: 35px;
+    font-size: 15px;
+}
+
+.wrap-profile-info {
+    margin-top: 20px;
+}
+.form-check-input {
+    height: 16px;
+    width: 16px;
+}
+a:hover {
+    color: #e7ab3d;
+}
