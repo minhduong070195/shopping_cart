@@ -238,10 +238,10 @@ class CustomerController extends Controller
     public function sendOtp(Request $request)
     {
         $twilio = new Twilio();
-        $id = 'AC0ad135b7fdb864b0b7c889d8856559ca';
-        $token = '5f3467b5889e3e3869994e86e22c1547';
-        $from = '+14405574270';
-        $to = '+84398471928';
+        $id = '';
+        $token = '';
+        $from = '';
+        $to = '';
         $otp = rand(100000, 999999);
         $request->session()->put('session_otp', $otp);
         $results = $twilio->send_twilio_sms($id, $token, $from, $to, $otp);
